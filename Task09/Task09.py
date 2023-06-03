@@ -7,7 +7,7 @@
 # Input: 5
 # Output: 120
 
-# n: int = int(input("Введите целое число: "))
+# n = int(input("Введите целое число: "))
 # i = 1
 # result = 1
 # while i <= n:
