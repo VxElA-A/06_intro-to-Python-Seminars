@@ -26,39 +26,19 @@
 # list_2 = [int(i) for i in input().split()][:m]
 # print([x for x in list_1 if x not in list_2])
 
-n = int(input('Введите число: '))
-list1 = [int(i) for i in input('Введите массив через пробел: ').split()]
-m = int(input('Введите число: '))
-list2 = [int(i) for i in input('Введите массив через пробел: ').split()]
+# Решение №3, здесь "n" и "m" никак не увзанны с массивами, хотя должны ограничивать "собой" число элементов. В решении 1 и 2 это ограничение есть.
+# n = int(input('Введите число: '))
+# list1 = [int(i) for i in input('Введите массив через пробел: ').split()]
+# m = int(input('Введите число: '))
+# list2 = [int(i) for i in input('Введите массив через пробел: ').split()]
+# for i in list1:
+#     if i not in list2:
+#         print(i, end=" ")
 
-for i in list1:
-    if i not in list2:
-        print(i, end=" ")
-
+# Решение 4 - ввод кол-ва элементов и самого массива здесь реализован прикольнее с точки зрения пользовательского взаимодействия, однако вторая часть где вывод, мне как новичку менее понятна.
 # n = int(input('Введите n: '))
 # lst_one = [int(input(f'Введите {i + 1}-е число первого массива: ')) for i in range(n)]
 # m = int(input('Введите m: '))
 # lst_two = [int(input(f'Введите {i + 1}-е число: второго массива')) for i in range(m)]
 
 # print(*[num for num in lst_one if num not in lst_two])
-
-
-# N = int(input("Введите количество элементов в массиве N: "))
-# first = []
-# for i in range(N):
-#     first.append(input(f"Введите {i} элемент множества: "))
-# print(first)
-
-# M = int(input("Введите количество элементов в массиве M: "))
-# second = []
-# for i in range(M):
-#     second.append(input(f"Введите {i} элемент множества: "))
-# print(second)
-
-# unique_second = set(second)
-
-# result = []
-# for el in first:
-#     if el not in unique_second:
-#         result.append(el)
-# print(f"Элементы первого массива, которых нет во втором: {', '.join(result)}")

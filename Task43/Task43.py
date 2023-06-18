@@ -22,14 +22,14 @@ print(f'Введенный массив: {list}')
 
 count = 0
 for i in range(len(list)-1):
-        print(i)
-        print('верхний цикл закончился')
+        # print(i)
+        # print('верхний цикл закончился')
         for j in range(i + 1, len(list)):
-              print(j)
-              print('нижний цикл закончился')
+              # print(j)
+              # print('нижний цикл закончился')
               if list[i] == list[j]:
-                print(list[i], list[j])
-                print('условие выполнилось')
+                # print(list[i], list[j])
+                # print('условие выполнилось')
                 count = count + 1
 print(count)
 

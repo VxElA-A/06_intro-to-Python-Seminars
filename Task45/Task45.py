@@ -31,19 +31,19 @@ for i in range(len(list_1)):
 # https://forproger.ru/tutorial/samouchitel-python
 
 
-def summ_of_dividers(number: int) -> int:
-    result = 0
-    for i in range(2, int(number ** 0.5) + 1):
-        if number % i == 0:
-            result += i
-            k = number // i
-            if k != i:
-                result += k
-    return result + 1
+# def summ_of_dividers(number: int) -> int:
+#     result = 0
+#     for i in range(2, int(number ** 0.5) + 1):
+#         if number % i == 0:
+#             result += i
+#             k = number // i
+#             if k != i:
+#                 result += k
+#     return result + 1
 
-k = int(input("Введите число: "))
-for i in range(k):
-    for j in range(i+1, k):
-        if summ_of_dividers(i) == j and summ_of_dividers(j) == i:
-            print(f"{i} {j}")
+# k = int(input("Введите число: "))
+# for i in range(k):
+#     for j in range(i+1, k):
+#         if summ_of_dividers(i) == j and summ_of_dividers(j) == i:
+#             print(f"{i} {j}")
             
