@@ -15,14 +15,26 @@
 # else:
 # print(‘different’)
 
-def same_by(characteristic, objects):
+# def same_by(characteristic, objects):
+#      return len(list(filter(characteristic, objects))) == 0
+
+
+
+# values = [0, 2, 10, 6]
+
+# if same_by(lambda x: x % 2, values):
+#      print('same')
+# else:
+#     print('different')
+
+# РЕШАЮ САМ !!!!!.........////////////////////// Долго разбирался...
+
+def same_by(characteristic, objects):    # res = list(filter(lambda x: x % 10 == 5, data)) из лекции
      return len(list(filter(characteristic, objects))) == 0
 
 
-
 values = [0, 2, 10, 6]
-
 if same_by(lambda x: x % 2, values):
      print('same')
 else:
-    print('different')
+     print('different')

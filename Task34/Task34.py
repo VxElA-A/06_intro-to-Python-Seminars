@@ -24,7 +24,7 @@ for i in slova:
     list_1.append(count)
 
 for i in range(len(list_1)-2):
-    if list_1[i-1] == list_1[i] or list_1[i] == list_1[i-1]:
+    if list_1[i-1] == list_1[i] and list_1[i] == list_1[i+1]:
         print('Парам пам-пам - с ритмом все в порядке')
     else:
         print('Пам парам - с ритмом НЕ все в порядке')

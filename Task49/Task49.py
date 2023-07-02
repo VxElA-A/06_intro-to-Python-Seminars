@@ -40,9 +40,19 @@
 
 # Второй вариант:
 
-def find_farthest_orbit (orbits):
-    orbits_change = list(map(lambda x: x[0] * x[1] if x[0] != x[1] else 0, orbits))
-    return orbits[orbits_change.index(max(orbits_change))]
+# def find_farthest_orbit (orbits):
+#     orbits_change = list(map(lambda x: x[0] * x[1] if x[0] != x[1] else 0, orbits))
+#     return orbits[orbits_change.index(max(orbits_change))]
 
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(*find_farthest_orbit(orbits))
+
+# РЕШАЮ САМ !!!!!.........////////////////////// Подсмотрел, но разобрался)
+
+def find_farthest_orbit(list_of_orbits):
+    orbits_change = list(map(lambda x: x[0] * x[1] if x[0] != x[1] else 0, list_of_orbits))
+    print(orbits_change)
+    return list_of_orbits[orbits_change.index(max(orbits_change))]
+    
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 print(*find_farthest_orbit(orbits))
